@@ -1,0 +1,276 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  border: 1px solid black;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+/* disposition du conteneur */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  border: 1px solid black;
+  width: 81.5rem;
+}
+.left-side img {
+  width: 20rem;
+  height: 45rem;
+  object-fit: cover;
+}
+p{
+  position: absolute;
+  top: 23rem;
+  padding: 80px;
+  color: white;
+  font-size: 20px;
+}
+/* disposition du formulaire */
+.right-side {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  margin: 30px;
+  /* padding-right: 80px; */
+}
+.right-side input {
+  width: 25rem;
+  height: 3rem;
+  border-radius: 5px;
+
+}
+.form_row {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.gras{
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.form_row label {
+  padding-bottom: 10px;
+}
+.form_row input {
+  width: 100%;
+  /* margin: 10px; */
+}
+.form_row > div {
+  width: 100%;
+  /* margin: 10px; */
+}
+#name{
+  border: 1px solid #04AA6D;
+}
+#last-name{
+  border: 1px solid red;
+}
+/* i{
+  position: absolute;
+  bottom: 1rem;
+} */
+
+.radio > div {
+  display: flex;
+  align-items: center;
+  /* margin: 10px; */
+  width: 100%;
+}
+.div1 {
+  width: 100%;
+  /* border: 1px solid black; */
+}
+input[type="radio"] {
+  width: 15px;
+  accent-color: #04AA6D;
+}
+.radio label{
+  font-size: 12px;
+}
+.payment {
+  /* margin-top: 10px; */
+  display: flex;
+  flex-direction: row;
+  gap: 25%;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+.meal {
+  display: flex;
+  flex-direction: row;
+  gap: 28%;
+  width: 100%;
+  /* font-weight: 200; */
+  /* border: 1px solid black; */
+}
+.para {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+}
+.span1{
+    border-bottom: 1px solid black;
+    font-size: 10px;
+}
+/* *{
+    box-sizing: border-box;
+} */
+ li{
+  margin-top: 35px;
+  padding: 10px;
+ }
+.tout{
+    width: 100%;
+    background-color: #ddd;
+    margin-bottom: 50px;
+}
+.html{
+    width: 50%;
+    background-color: #04AA6D;
+}
+.skills{
+    text-align: right;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: white;
+    height: 3px;
+}
+.skills > span{
+  border: 1px solid #04AA6D;
+  font-size: 18px;
+  color: white;
+  padding: 10px 40px;
+  bottom: 10px;
+  position: relative;
+  background: #04AA6D;
+  height: 50%;
+}
+.button{
+  display: flex;
+  flex-direction: row;
+  width: 15rem;
+  padding: 15px;
+  gap: 25px;
+}
+input[type="submit"]{
+  background-color: #04AA6D;
+  border: 1px solid #04AA6D;
+  color: white;
+}
+input[type="reset"]{
+  border: 1px solid #04AA6D;
+  color: gray;
+  background-color: white;
+}
+@media screen and (max-width: 630px){
+  *{
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    height: 100%;
+    font-size: small;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.left-side img {
+  width: 320px;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+}
+p{
+  position: absolute;
+  top: 10rem;
+  color: white;
+  font-size: 13px;
+}
+.right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  margin: 0;
+}
+.right-side input[type="text"], input[type="mail"], input[type="number"] {
+  width: 100%;
+  height: 30px;
+  border-radius: 2px;
+}
+.form_row {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.radio > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.radio label{
+  font-size: 9px;
+}
+input[type="radio"] {
+  width: 10px;
+}
+.form_row > div {
+  width: 97%;
+}
+.gras{
+  font-size: 12px;
+  font-weight: 300;
+}
+.form_row label {
+  margin: 0;
+}
+.payment, .meal{
+  display: flex;
+  gap: 20%;
+}
+.html{
+  width: 60%;
+}
+.tout{
+  width: 100%;
+}
+.skills > span{
+font-size: 15px;
+padding: 5px 20px;
+bottom: 10px;
+height: 30%;
+}
+.button{
+display: flex;
+flex-direction: row;
+font-size: 10px;
+}
+input[type="submit"]{
+  height: 30px;
+  font-size: 12px;
+}
+input[type="reset"]{
+  height: 30px;
+  font-size: 12px;
+}
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire</title>
+</head>
+
+<body>
+    <!-- debut formulaire -->
+    <div class="container">
+        <div class="left-side">
+            <img src="image/african-woman.png" alt="photo Femme Africaine">
+            <p>REGISTRE NOW</p>
+        </div>
+
+        <form action="">
+            <div class="right-side">
+                <div class="gauche">
+                    <div class="form_row">
+                        <div>
+                            <label for="name" class="gras">FIRST NAME</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div>
+                            <label for="name" class="meal"><span class="gras">MEAL PREFERENCE</span> <span
+                                    class="span1">Lunch detail</span></label>
+                            <input type="text" id="meal" name="meal">
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div>
+                            <label for="name" class="gras">LAST NAME</label>
+                            <input type="text" id="last-name" name="name">
+                        </div>
+                        <!-- <div> -->
+                        <div class="radio">
+                            <div class="payment">
+                                <span class="gras">PAYEMENT MODE</span> <span class="span1">Payement detail</span>
+                            </div>
+                            <div class="div1">
+                                <input type="radio" name="payment" id="cash">
+                                <label for="payment" class="gras">Cash</label>
+                                <input type="radio" name="payment" id="cheque">
+                                <label for="payment" class="gras">Cheque</label>
+                                <input type="radio" name="payment" id="draf">
+                                <label for="payment" class="gras">Demand Draf</label>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                    <div class="form_row">
+                        <div>
+                            <label for="name" class="gras">COMPANY</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div>
+                            <label for="cheque" class="gras">DD/CHEQUE NO.</label>
+                            <input type="text" id="cheque" name="cheque">
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div>
+                            <label for="mail" class="gras">EMAIL</label>
+                            <input type="mail" id="mail" name="mail">
+                        </div>
+                        <div>
+                            <label for="draw" class="gras">DRAW ON ( BANK NAME )</label>
+                            <input type="text" id="draw" name="draw">
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div>
+                            <label for="phone" class="gras">PHONE NUMBER</label>
+                            <input type="number" id="phone" name="phone">
+                        </div>
+                        <div>
+                            <label for="payable" class="gras">PAYABLE AT</label>
+                            <input type="text" id="payable" name="payable">
+                        </div>
+                    </div>
+                    <ul>
+                        <li>DONNATE US</li>
+                    </ul>
+                    <div class="tout">
+                        <div class=" skills html"><span> $500 </span></div>
+                    </div>
+
+
+                    <div style="display: flex;justify-content: end;">
+                        <div class="button">
+                            <input type="submit" value="SUBMIT">
+                            <input type="reset" value="RESET">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- fin formulaire -->
+</body>
+
+</html>
